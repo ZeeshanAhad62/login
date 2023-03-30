@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="process_payment.ruby" method="post">
+		<h1>Payment Details</h1>
+		<label for="name">Name on Card:</label>
+		<input type="text" id="name" name="name" placeholder="Enter the name on your card" required>
+
+		<label for="card_number">Card Number:</label>
+		<input type="text" id="card_number" name="card_number" placeholder="Enter your card number" required>
+
+		<label for="expiry_date">Expiry Date:</label>
+		<input type="text" id="expiry_date" name="expiry_date" placeholder="MM/YY" required>
+
+		<label for="cvv">CVV:</label>
+		<input type="text" id="cvv" name="cvv" placeholder="Enter the CVV code" required>
+
+		<label for="email">Email Address:</label>
+		<input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+		<label for="phone">Phone Number:</label>
+		<input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+		<label for="amount">Amount:</label>
+			<input type="number" class="amount" placeholder="amount" required>
+		    <input type="submit" value="Pay">
+	</form>
+</body>
+</html>
